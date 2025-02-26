@@ -222,9 +222,12 @@ If you find this repo useful in your research, please consider citing:
 ## ConfliBERT Workflows
 
 ### Technical Installation Path
-<img src="/readme-docs/workflow.png" alt="ConfliBERT Installation Decision Workflow" width="70%">
+
+![ConfliBERT Installation Decision Workflow](/readme-docs/workflow.png)
 
 ### Research Usage Path
-<img src="/readme-docs/conflibert-tasks.png" alt="ConfliBERT Research Tasks Workflow" width="80%">
+
+![ConfliBERT Research Tasks Workflow](readme-docs/conflibert-tasks.png)
+
 
 These workflows help you navigate both technical setup and research planning with ConfliBERT.
