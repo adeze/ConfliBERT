@@ -1,4 +1,26 @@
 #!/usr/bin/env python
+This script fine-tunes a masked language model (BERT, ALBERT, RoBERTa, etc.) on a text file or a dataset using the HuggingFace Transformers library.
+
+The script supports the following functionalities:
+- Loading datasets from the HuggingFace hub or from local files (CSV, JSON, TXT).
+- Configuring model, tokenizer, and training arguments.
+- Preprocessing datasets, including tokenization and optional line-by-line processing.
+- Training the model with options for resuming from checkpoints and logging metrics.
+- Evaluating the model and calculating perplexity.
+- Pushing the fine-tuned model to the HuggingFace hub.
+
+Classes:
+    ModelArguments: Arguments pertaining to which model/config/tokenizer to fine-tune or train from scratch.
+    DataTrainingArguments: Arguments pertaining to the input data for training and evaluation.
+
+Functions:
+    main(): The main function that sets up the training and evaluation pipeline.
+    _mp_fn(index): Helper function for TPU support.
+
+Usage:
+    Run the script with the desired arguments to fine-tune a masked language model on your dataset.
+    Example:
+        python run_mlm.py --model_name_or_path bert-base-uncased --dataset_name wikitext --do_train --do_eval
 # coding=utf-8
 # Copyright 2020 The HuggingFace Team All rights reserved.
 #
